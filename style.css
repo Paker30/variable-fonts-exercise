@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Raleway';
 }
 
 html {
@@ -17,6 +17,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  --color-white: hsl(0, 0%, 100%);
 }
 
 .wrapper {
@@ -46,10 +47,29 @@ footer {
 .logo {
   font-size: 2rem;
   margin-bottom: 16px;
+  font-weight: 900;
+  size: 1em;
+  color: var(--color-white);
+}
+
+.sublogo {
+  color: var(--color-gray-500);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1em;
+}
+
+.person-name {
+  color: var(--color-gray-300);
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1em;
 }
 
 .legal {
   margin-top: auto;
+  color: var(--color-gray-700);
+  font-weight: 400;
 }
 
 .links {
@@ -61,10 +81,13 @@ footer {
   margin-bottom: 24px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--color-gray-700);
+  font-weight: 700;
+  font-size: 1em;
 }
 
 .links li {
-  margin: 16px 0;
+  margin: 1em 0;
 }
 
 .links li:last-of-type {
@@ -73,6 +96,9 @@ footer {
 
 .links a {
   text-decoration: none;
+  color: var(--color-gray-100);
+  font-size: 1em;
+  font-weight: 400;
 }
 
 main {
